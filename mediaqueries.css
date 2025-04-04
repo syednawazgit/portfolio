@@ -1,0 +1,231 @@
+
+@media screen and (max-width: 768px) {
+    #navigation-bar {
+        display: none;
+    }
+
+    #mobile-header {
+        display: flex;
+    }
+
+    #hamburger {
+        display: block;
+    }
+
+
+    .home {
+        flex-direction: column;
+        padding: 10%;
+    }
+    .home-content {
+        text-align: center;
+        position: relative;
+        top: 170px;
+    }
+
+    .avatar {
+        background: transparent;
+        border: none;
+        position: relative;
+        bottom: 69px;
+        left: -277px;
+    }
+
+    .avatar img {
+        overflow: hidden;
+    }
+
+    .home-content h1 {
+        font-size: 2.625rem;
+        position: relative;
+        left: 60px;
+  
+    }
+
+    .home-content h2 {
+        font-size: 1.875rem;
+        position: relative;
+        left: 60px;
+     
+    }
+
+    .home-content p {
+        position: relative;
+        left: 60px;
+    }
+
+    .btn-box {
+        position: relative;
+        left: 60px;
+    }
+
+    .social-icons {
+        position: relative;
+        right: -500px;
+    }
+
+
+    .home-footer {
+        position: relative;
+        top: 170px;
+    }
+
+/*ABOUT ME */
+.title {
+    position: relative;
+    top: 60px;
+    font-size: 1.9rem;
+}
+.about-text {
+    font-size: 0.9rem;
+    line-height: 1.4;
+    margin-top: 1rem;
+    position: relative;
+    top: 50px;
+}
+
+.skills {
+    font-size: 1.9rem;
+    position: relative;
+    top: 30px;
+}
+
+.front-end {
+    position: relative;
+    top: 37px;
+}
+
+.flex-list {
+    position: relative;
+    top: 30px;
+}
+.about-footer {
+    font-size: 0.8rem;
+}
+
+
+/* PROJECTS */ 
+.projects-container {
+    position: relative;
+    top: 60px;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project-footer {
+    font-size: 0.8rem;
+}
+
+/* BLOG * /*/
+.footer {
+    font-size: 0.8rem;
+}
+
+
+/* CONTACT */
+
+.contact-title {
+    font-size: 2.5rem;
+    position: relative;
+    top: 140px;
+    left: 30px;
+}
+
+.contactform-box {
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contactform-subtext {
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    top: 130px;
+    left: 130px;
+}
+
+form {
+    position: relative;
+    top: 80px;
+    left: 120px ;
+}
+
+.contactform-socials {
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    top: 100px;
+    left: 220px;
+}
+
+.contact-footer {
+    font-size: 0.8rem;
+    position: relative;
+    top: 120px;
+}
+
+
+    
+}
+
+
+
+
+/* Tablet and Mobile view */
+@media screen and (max-width:799px) {
+    .menu a {
+        font-size: 20px;
+    }
+
+   
+    .home-content h1 {
+        font-size: 1.75rem;
+    }
+
+    .home-content h2 {
+        font-size: 1.5rem;
+    }
+
+    .home-content p {
+        font-size: 0.9rem;
+    }
+
+    
+ 
+
+
+    .btn-box a {
+        font-size: 0.9rem;
+    }
+
+    .social-icons a {
+        height: 30px;
+        width: 30px;
+    }
+
+    .home-footer {
+        font-size: 0.8rem;
+    }
+
+/*ABOUT */
+    .about-text {
+        font-size: 0.9rem;
+        line-height: 1.5;
+        margin-bottom: 1.5rem;
+    }
+
+
+/*BLOG */ 
+.blogs a {
+    position: relative;
+    left: 280px;
+}
+
+/* CONTACT */
+
+
+
+
+}

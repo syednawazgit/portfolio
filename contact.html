@@ -1,0 +1,87 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Syed Nawaz</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <link rel="icon" href="./assests/favicon.ico">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <nav id="navigation-bar">
+        <div class="logo">Syed</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href='/'>Home</a></li>
+                <li><a href='about.html'>About</a></li>
+                <li><a href='education.html'>Education</a></li>
+                <li><a href='projects.html'>Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="mobile-header">
+        <div class="logo">Syed</div>
+        <div class="hamburger" id="hamburger" tabindex="0">
+            &#9776;
+        </div>
+    </nav>
+        <ul class="menu" id="menu">
+            <li><a href='/'>Home</a></li>
+            <li><a href='about.html'>About</a></li>
+            <li><a href='education.html'>Education</a></li>
+            <li><a href='projects.html'>Projects</a></li>
+            <li><a href='contact.html'>Contact</a></li>
+        </ul>
+    <section id="contactform">
+        <h2 class="contact-title">Let's Work <span class="aboutme">Together!</span></h2>
+             <div class="contactform-box">
+            <p class="contactform-subtext">
+                If you’re looking to hire me or want to work with me on a project,
+                 feel free to reach out! I'm open to freelance opportunities, contract work, or project collaborations.
+                  You can connect with me on LinkedIn or GitHub, 
+                  and you’re also welcome to drop me an email with your message. 
+                  Let’s get in touch and create something great together!
+            </p>
+
+                <form action="process-form.php" method="POST" aria-labelledby="contact-heading">
+                    <input type="hidden" name="form-name" value="contact">
+                    <div>
+                        <label for="name">Your Name:</label>
+                        <input type="text" id="name" name="name" required aria-labelledby="true">
+                    </div>
+                    <div>
+                        <label for="email">Your Email:</label>
+                        <input type="email" id="email" id="email" required aria-labelledby="true">
+                        <div id="emailHelp" aria-live="polite">
+                            Please Enter a valid email address
+                        </div>
+                    </div> 
+
+                    <div>
+                        <label for="message">Your Message:</label>
+                        <textarea name="message" id="message" rows="5" required aria-required="true"></textarea>
+                    </div>
+                    <div>
+                        <button type="submit">Send</button>
+                    </div>
+                    <div id="success-message" role="status" aria-live="polite" hidden>
+                        Thank you! Your essage has been sent successfully
+                    </div>
+                </form>
+            </div>
+
+            <div class="contactform-socials">
+                <a href="https://github.com/syednawazgit" target="_blank" aria-label="GitHub"><i class='bx bxl-github'></i></a>
+            <a href="https://www.linkedin.com/in/syed-nawaz-24518b25b" target="_blank" aria-label="LinkedIn"><i class='bx bxl-linkedin'></i></a>
+            </div>
+    
+            
+    </section>
+    <footer class="contact-footer"> 
+        Copyright © 2024 | All Rights Reserved.
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
