@@ -903,5 +903,20 @@ button:hover {
       text-align: center;
       padding: 1rem 0;
     }
+    menu {
+        display: none;
+        flex-direction: column;
+        background-color: #0a192f; /* Or your navbar color */
+        position: absolute;
+        top: 60px; /* Adjust based on your header height */
+        right: 0;
+        width: 100%;
+        text-align: center;
+        z-index: 1000;
+    }
+    
+    /* When .show-menu class is added, show the menu */
+    .menu.show-menu {
+        display: flex;
   }
   
