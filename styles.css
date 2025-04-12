@@ -867,7 +867,7 @@ button:hover {
       position: absolute;
       top: 60px;
       width: 100%;
-      left: 0;
+      right: 0;
       text-align: center;
     }
   
