@@ -9,6 +9,7 @@
     <link rel="icon" href="./assests/favicon.ico">
 </head>
 <body>
+    <!-- Main Navigation Bar -->
     <nav id="navigation-bar" role="navigation" aria-label="main navigation">
         <div class="logo">Syed Nawaz</div>
         <div>
@@ -22,7 +23,25 @@
             </ul>
         </div>
     </nav>
-    
+
+    <!-- Mobile Navigation (Hamburger Menu) -->
+    <nav id="mobile-header">
+        <div class="logo" role="banner">Syed Nawaz</div>
+        <div class="hamburger" id="hamburger" tabindex="0">
+            &#9776;
+        </div>
+    </nav>
+
+    <ul class="menu" id="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="Experience.html">Experience</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+    <!-- Education Section -->
     <section id="education">
         <h2 class="title">My <span class="aboutme">Education</span></h2>
         
@@ -61,10 +80,19 @@
         </div>
     </section>
 
+    <!-- Footer Section -->
     <footer class="about-footer" role="contentinfo">
         Copyright © 2024 | All Rights Reserved.
     </footer>
 
-    <script src="script.js"></script>
+    <!-- Script for Mobile Menu Toggle -->
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const menu = document.getElementById('menu');
+    
+        hamburger.addEventListener('click', () => {
+            menu.classList.toggle('show-menu');
+        });
+    </script>
 </body>
 </html>
