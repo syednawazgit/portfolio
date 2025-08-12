@@ -7,7 +7,6 @@
     box-sizing: border-box;
 }
 
-
 html {
     font-size: 100%;
 }
@@ -86,7 +85,6 @@ nav, .nav-links {
     text-underline-offset: 1rem;
 }
 
-
 /* Hamburger menu */
 .hamburger {
     font-size: 30px;
@@ -97,7 +95,6 @@ nav, .nav-links {
     z-index: 10;
     display: none;
 }
-
 
 .menu {
     height: 100%;
@@ -397,7 +394,7 @@ nav, .nav-links {
 }
 
 .about-text {
-font-size: 1.1rem;
+font-size: 2rem;
 line-height: 1.8;
 margin-bottom: -140px;
 max-width: 1000px;
@@ -421,11 +418,11 @@ bottom: 50px;
     font-size: 2rem;
 }
 .flex-list {
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: center;
-   position: relative;
-   bottom: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+    bottom: 70px;
 }
 .sk-text {
     display: flex;
@@ -459,7 +456,6 @@ bottom: 50px;
     top: 40px;
 }
 
-
 .html-img, .css-img, .javascript-img, .bootstrap-img, .reactjs-img, 
 .postgresql-img, .nodejs-img, .expressjs-img, .python-img, .git-img, .java-img, .figma-img, .chrome-img {
     height: 50px;
@@ -483,8 +479,8 @@ h4 {
     font-size: 1.4375rem;
 }
 .projects-container {
-   display: flex;
-   justify-content: space-evenly;
+    display: flex;
+    justify-content: space-evenly;
 }
 .project-card {
     background-color: #1E293B;
@@ -496,6 +492,9 @@ h4 {
     top: 30px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
+
+    /* Add this line below */
+    border: 2px solid #ffffff;
 }
 
 .project-card:hover {
@@ -725,7 +724,6 @@ button:hover {
     top: 50px;
 }
 
-
 .error {
     color: red;
     font-size: 0.875rem;
@@ -851,54 +849,58 @@ button:hover {
     #navigation-bar {
       display: none;
     }
-  
+    
     #mobile-header {
       display: flex;
       justify-content: space-between;
       align-items: center;
       padding: 1rem;
     }
-  
+    
     .menu {
-      display: none;
-      flex-direction: column;
-      list-style: none;
-      background-color: #fff;
-      position: absolute;
-      top: 60px;
-      width: 100%;
-      right: 0;
-      text-align: center;
+        display: none;
+        flex-direction: column;
+        background-color: #0a192f; /* Your existing color */
+        position: absolute;
+        top: 60px; /* Below the header */
+        right: 0; /* Stick to the right */
+        width: 60%; /* Adjust width as you like (50%-70% looks good) */
+        text-align: center;
+        z-index: 1000;
+        padding: 1rem 0;
+        border-radius: 0 0 0 10px; /* Optional: smooth corner */
     }
-  
+    
+    /* When menu is visible */
+    
     .menu li {
       padding: 1rem 0;
     }
-  
+    
     /* When hamburger is active */
     .menu.active {
       display: flex;
     }
-  
+    
     .education-box {
       flex-direction: column;
       text-align: center;
     }
-  
+    
     .edu-img {
       width: 100%;
       max-width: 300px;
       margin: 0 auto;
     }
-  
+    
     .edu-text {
       padding: 1rem;
     }
-  
+    
     .title {
       font-size: 1.8rem;
     }
-  
+    
     .home-footer {
       text-align: center;
       padding: 1rem 0;
@@ -918,5 +920,29 @@ button:hover {
     /* When .show-menu class is added, show the menu */
     .menu.show-menu {
         display: flex;
-  }
-  
+    }
+
+/* N8n Chatbot Override to fix display issues */
+.n8n-chat-container, 
+.n8n-chat-button {
+  z-index: 99999 !important;
+  opacity: 1 !important;
+  pointer-events: auto !important;
+}
+
+.n8n-chat-container.n8n-chat-open .n8n-chat-button .n8n-chat-toggle-icon {
+  transform: rotate(180deg) !important;
+}
+
+.n8n-chat-container.n8n-chat-open .n8n-chat-widget {
+  opacity: 1 !important;
+  visibility: visible !important;
+  transform: scale(1) !important;
+}
+
+.n8n-chat-widget {
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(0.9);
+  transition: all 0.3s ease-in-out;
+}
