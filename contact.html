@@ -93,5 +93,25 @@
             menu.classList.toggle('show-menu');
         });
     </script>
+    <link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
+<script type="module">
+    import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
+    
+    createChat({
+        webhookUrl: 'https://syedn.app.n8n.cloud/webhook/b5dd9935-cc80-4b48-9d7e-0852cc5d529b/chat',
+        options: {
+            title: 'kitti 2.0',
+            welcomeMessage: 'Hii! im kitti 2.o syeds chatbot. How can I help you today?',
+            // New, working robot icon link
+            buttonIconUrl: 'https://www.svgrepo.com/svg/235235/robot-android.svg',
+            theme: {
+                primary: '#FF7F50',
+                text: '#081b29',
+                secondary: '#36454F',
+            }
+        }
+    });
+</script>
 </body>
 </html>
+
